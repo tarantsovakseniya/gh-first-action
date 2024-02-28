@@ -12,7 +12,9 @@ jobs:
       #list of steps
       - name: Print greeting
         #command which should be executed
-        run: echo "Hello World!"
+        run: |
+          echo "Hello World!"
+          echo "Second line."
       - name: Pring goodbye
         run: echo "Done - bye!"
 
