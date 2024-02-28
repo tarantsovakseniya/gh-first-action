@@ -1,0 +1,19 @@
+#name
+name: First Workflow
+#when it's executed, trigger
+#manual start
+on: workflow_dispatch
+jobs:
+  first-job:
+    #env where the job runs, runners
+    runs-on: ubuntu-latest
+    #steps should be  executed
+    steps:
+      #list of steps
+      - name: Print greeting
+        #command which should be executed
+        run: echo "Hello World!"
+      - name: Pring goodbye
+        run: echo "Done - bye!"
+
+
